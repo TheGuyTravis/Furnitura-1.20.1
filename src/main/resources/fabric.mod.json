@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "furnitura",
+	"version": "${version}",
+	"name": "Furnitura",
+	"description": "Adds furnitura to minecraft!",
+	"authors": [
+		"Travis Cayden!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/furnitura/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.travis.furnitura.FurnituraMod"
+		],
+		"fabric-datagen": [
+          "net.travis.furnitura.FurnituraModDataGenerator"
+		],
+		"client": [
+			"net.travis.furnitura.FurnituraModClient"
+		]
+	},
+	"mixins": [
+		"furnitura.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
